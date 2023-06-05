@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Interface 02</title>
   </head>
   <body>
@@ -20,7 +25,7 @@
 
         <script>
           // Set the date we're counting down to
-          var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+          var countDownDate = new Date().setHours(24, 0, 0, 0);
 
           // Update the count down every 1 second
           var x = setInterval(function () {
@@ -42,7 +47,7 @@
 
             // Display the result in the element with id="demo"
             document.getElementById("demo").innerHTML =
-              days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+              hours + ": " + minutes + ": " + seconds;
 
             // If the count down is finished, write some text
             if (distance < 0) {
@@ -54,7 +59,13 @@
         <h3>Intel Xeon E5-1650V3</h3>
       </div>
       <div class="button">
-        <button type="button">SERVER AUCTION</button>
+        <button type="button">
+          <i
+            class="fa-solid fa-gavel fa-flip-horizontal"
+            style="color: #383838"
+          ></i
+          >SERVER AUCTION
+        </button>
       </div>
     </div>
   </body>
